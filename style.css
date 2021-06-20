@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Rubik', sans-serif;
+}
+header.tracker {
+    /* position: relative; */
+    height: 35vh;
+    padding: 5px 25px;
+    background-image: url('/images/pattern-bg.png');
+    background-size: cover;
+}
+h1.title {
+    text-align: center;
+    font-weight: normal;
+    padding: 10px;
+    color: white;
+}
+form.search-box {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+
+}
+input.search {
+    width: 80%;
+    height: 60px;
+    font-size: 14px;
+    padding: 5px 15px;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+input.search:focus {
+    outline: none;
+}
+button.submit {
+    background-color: black;
+    height: 100%;
+    width: 50px;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+div.info-box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 0px;
+    background-color: #fff;
+    width: 85%;
+    height: 250px;
+    border-radius: 15px;
+}
+p.name {
+    color: hsl(0, 0%, 59%);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 10px;
+    font-weight: bold;
+}
+p.result {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+div.category:nth-last-child(1){
+    border: none;
+}
+div#mapid {
+    width: 100%;
+    z-index: 90;
+    height: 65vh;
+}
+@media (min-width: 500px) and (orientation: landscape) {
+    header.tracker {
+        height: 45vh;
+    }
+    div.info-box {
+        flex-direction: row;
+        height: 150px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    header.tracker {
+        height: 25vh;
+    }
+    div.info-box {
+        padding: 15px;
+        flex-direction: row;
+        height: 150px;
+    }
+    div#mapid {
+        height: 75vh;
+    }
+    p.name {
+        text-align: left;
+    }
+    p.result {
+        text-align: left;
+    }
+    div.category {
+
+        width: 25%;
+        margin-left:10px;
+        border-right: 1px solid grey;
+    }
+}
+
+@media (min-width: 1440px) {
+    header.tracker {
+        height: 30vh;
+    }
+    div.info-box {
+        height: 200px;
+    }
+    div#mapid {
+        height: 70vh;
+    }
+    p.name{
+        font-size: 14px;
+    }
+    p.result {
+        font-size: 26px;
+    }
+}
