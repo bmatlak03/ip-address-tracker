@@ -9,7 +9,7 @@ html {
 header.tracker {
     height: 35vh;
     padding: 5px 25px;
-    background-image: url('/images/pattern-bg.png');
+    background-image: url('./images/pattern-bg.png');
     background-size: cover;
 }
 h1.title {
